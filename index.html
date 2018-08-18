@@ -45,7 +45,13 @@
 			.fly-in.hidden li{
 				opacity: 0; 
 			}
-
+			.fly-in.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
+			.fly-in.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
+			.fly-in.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+			.fly-in.hidden li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
+			.fly-in.hidden li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
+			.fly-in.hidden li:nth-child(6) { transform: translateX(20px) translateY(-200px); }
+			.fly-in.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
 			
 			.text2 {
 				padding-top: 15px;
@@ -84,7 +90,7 @@
 	</head>
 	<body>
 	<div class="container">
-		<div class="fly-in hidden">
+		<div class="fly-in ">
 			<ul>
 					<li>W</li>
 					<li>E</li>
@@ -95,24 +101,8 @@
 					<li>E</li>
 			</ul> 
 		</div>
-		<div class="text2 hidden"><a href='eng.html'>ENTER</a></div>
+		<div class="text2 "><a href='eng.html'>ENTER</a></div>
 	</div>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script type="text/javascript">
-			$(function() {
-			
-				setTimeout(function() {
-					$('.fly-in').removeClass('hidden');
-				}, 500);
-			})();
-		</script>
-		<script type="text/javascript">
-			$(function() {
-			
-				setTimeout(function() {
-					$('.text2').removeClass('hidden');
-				}, 500);
-			})();
-		</script>
+		
 	</body>
 </html>
