@@ -475,7 +475,7 @@ li a {
 }
 
 #web3 img {
-    display: absolute;
+    	display: absolute;
 	float: left;
 	margin-right: 0;
 	padding-left: 300px;
@@ -550,7 +550,7 @@ li a {
   background-color: #ff7f7f;
 }
 
-footer{
+footer {
 	padding-top: 50px;
 	padding-bottom: 15px;
 }
