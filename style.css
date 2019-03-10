@@ -52,6 +52,7 @@ h2 {
   }
 }
 
+// Apply changes when screen is 800px or lower
 @media(max-width: 800px) {
   .container {
     padding: 0 1rem;
@@ -62,12 +63,13 @@ h2 {
   }
 }
 
+// Apply changes when screen is 500px or lower
 @media(max-width: 500px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
