@@ -441,7 +441,7 @@ li a {
 
 .portfolio {
 	padding-top: 100px;
-	padding-bottom: 1800px;
+	padding-bottom: 2000px;
 	margin: 0 auto;
 }
 
@@ -475,6 +475,16 @@ li a {
 }
 
 #web3 img {
+    	display: absolute;
+	float: left;
+	margin-right: 0;
+	padding-left: 300px;
+	width: 400px;
+	padding-top: 20px;
+	padding-bottom: 110px;
+}
+
+#web4 img {
     	display: absolute;
 	float: left;
 	margin-right: 0;
