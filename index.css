@@ -485,7 +485,7 @@ li a {
 }
 
 #web4 img {
-    display: absolute;
+    	display: absolute;
 	float: left;
 	margin-right: 0;
 	padding-left: 300px;
