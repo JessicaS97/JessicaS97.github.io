@@ -49,7 +49,13 @@
 @media (min-width: 0px) and (max-width: 799px) {
   .feature-box {
     width: 100%;
-    &__side {
+
+    &:active &__side--front {
+      transform: rotateY(180deg);
+    }
+
+    &:active &__side--back {
+      transform: rotateY(0);
     }
   }
 }
