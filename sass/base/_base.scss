@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Borders and padding not added to total width or height */
+}
+
+body {
+  padding: 30px;
+}
+
+@media (min-width: 0px) and (max-width: 799px) {
+  body {
+    padding: 15px;
+  }
+}

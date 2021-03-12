@@ -1,0 +1,55 @@
+.feature-box {
+  font-size: 1.3rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 3px;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  top: -8rem;
+
+  &__text {
+    color: $color-grey-dark;
+    font-size: 1.2rem;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__side {
+    height: 25rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    padding: 1.5rem;
+
+    &--front {
+      background-color: white;
+    }
+
+    &--back {
+      background-color: $color-grey-medium;
+      transform: rotateY(180deg);
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+}
+
+@media (min-width: 0px) and (max-width: 799px) {
+  .feature-box {
+    width: 100%;
+    &__side {
+    }
+  }
+}

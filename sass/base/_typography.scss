@@ -1,0 +1,72 @@
+body {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $color-grey-dark;
+}
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+
+  &--main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 30px;
+
+    animation: moveInFromLeft 2s ease-out;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+
+    animation: moveInFromRight 2s ease-out;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right, $color-lilac, $color-lilac-dark);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: skewY(2deg) skewX(2deg);
+  }
+
+  &--white {
+    color: $color-white;
+  }
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 799px) {
+  .heading-primary {
+    padding-left: 1.5rem;
+    &--main {
+      font-size: 40px;
+      letter-spacing: 20px;
+    }
+  }
+}
