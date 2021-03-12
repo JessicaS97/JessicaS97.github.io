@@ -23,7 +23,7 @@
               <span class="heading-primary--main">Jessica J Sun</span>
               <span class="heading-primary--sub">Developer | Creator</span>
             </h1>
-            <a href="#projects" class="btn btn--white btn--animated">See Projects</a>
+            <a href="docs/Jessica J Sun CV.pdf" class="btn btn--white btn--animated" download="Jessica J Sun CV">Download Resume</a>
           </div>
         </header>
 
@@ -60,18 +60,34 @@
             <div class="u-center-text u-margin-bottom-medium">
               <h2 class="heading-secondary heading-secondary--white u-margin-bottom-small">Projects</h2>
             </div>
+            <div id="light">
+              <a class="boxclose" id="boxclose" onclick="lightbox_close(e);"></a>
+              <video id="VisaChipCardVideo" width="600" controls>
+                  <source src="img/project-demo-1.webm" type="video/webm">
+                  <!--Browser does not support <video> tag -->
+                </video>
+            </div>
+            <div id="fade" onClick="lightbox_close();"></div>
             <div class="row">
               <div class="col-1-of-3">
                 <div class="feature-box">
                   <div class="feature-box__side feature-box__side--front">
-                    <h3 class="heading-tertiary u-margin-bottom-small u-margin-top-small">Command Line Interface</h3>
-                    <img src="img/nat-3.jpg" alt="Project photo 1" class="feature-box__img">
+                    <h3 class="heading-tertiary u-margin-bottom-small u-margin-top-small">
+                      Online Code Editor
+                    </h3>
+                    <img src="img/project-demo-1.png" alt="Project photo 1" class="feature-box__img">
                   </div>
                   <div class="feature-box__side feature-box__side--back">
                     <div class="u-height-medium">
-                      <p class="feature-box__text">Lorem ipsum dolor sit amet sunt pariatur!</p>
+                      <p class="feature-box__text">
+                        An interactive browser platform for developers to run JavaScript code snippets, 
+                        which includes a text editor to support learnability. It simulates popular editors
+                        like CodePen.io through in-browser code bundling and transpiling
+                        <br>
+                        <br>Used <b>React, Typescript and Redux</b>
+                      </p>
                     </div>
-                    <a href="" class="btn btn--white u-margin-bottom-up-small">View</a>
+                    <button type="button" onclick="lightbox_open();" class="btn btn--white u-margin-bottom-up-small" target="_blank">View</button>
                   </div>
                 </div>
               </div>
@@ -106,5 +122,21 @@
           </section>
         </main>
         <footer class="u-margin-top-small u-center-text">Crafted by me &copy; 2021</footer>
+        <script type = "text/JavaScript">
+          function lightbox_open(e) {
+            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+            window.scrollTo(0, 0);
+            document.getElementById('light').style.display = 'block';
+            document.getElementById('fade').style.display = 'block';
+            lightBoxVideo.play();
+          }
+
+          function lightbox_close() {
+            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+            document.getElementById('light').style.display = 'none';
+            document.getElementById('fade').style.display = 'none';
+            lightBoxVideo.pause();
+          }       
+        </script>
     </body>
 </html>

@@ -49,17 +49,7 @@
 @media (min-width: 0px) and (max-width: 799px) {
   .feature-box {
     width: 100%;
-  }
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .feature-box {
-    &:hover &__side--front {
-      transform: rotateY(180deg);
-    }
-
-    &:hover &__side--back {
-      transform: rotateY(0);
+    &__side {
     }
   }
 }
