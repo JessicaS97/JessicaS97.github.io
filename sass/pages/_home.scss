@@ -44,6 +44,7 @@ a {
 }
 
 .showcase-bubbles {
+  width: 70%;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -81,7 +82,7 @@ a {
   display: inline-block;
   font-size: 0.9em;
   vertical-align: middle;
-  color: var(--showcase-text);
+  color: $color-grey-dark;
   margin: 0;
 }
 
