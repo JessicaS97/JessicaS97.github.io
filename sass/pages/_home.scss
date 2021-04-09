@@ -43,6 +43,48 @@ a {
   }
 }
 
+.showcase-bubbles {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.showcase-bubble-container {
+  padding-right: 10px;
+}
+
+.showcase-bubble {
+  border-radius: 12px;
+}
+
+.showcase-bubble:hover {
+  cursor: pointer;
+}
+
+.showcase-image {
+  width: 100%;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.showcase-info {
+  padding: 15px 30px;
+  border-radius: 0px 0px 12px 12px;
+  background-color: white;
+}
+
+.showcase-info > img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.showcase-info > p {
+  display: inline-block;
+  font-size: 0.9em;
+  vertical-align: middle;
+  color: var(--showcase-text);
+  margin: 0;
+}
+
 #fade {
   display: none;
   position: fixed;
@@ -110,5 +152,11 @@ a {
   .section-projects {
     position: relative;
     height: 1000px;
+  }
+
+  .showcase-bubble-container {
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
