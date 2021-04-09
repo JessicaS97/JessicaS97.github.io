@@ -313,14 +313,14 @@ a {
 
 .showcase-bubbles {
   width: 70%;
-  padding-top: 15px;
-  padding-bottom: 15px; }
+  padding-top: 15px; }
 
 .showcase-bubble-container {
   padding-right: 10px; }
 
 .showcase-bubble {
-  border-radius: 12px; }
+  border-radius: 12px;
+  padding-bottom: 35px; }
 
 .showcase-bubble:hover {
   cursor: pointer; }
@@ -330,6 +330,7 @@ a {
   border-radius: 12px 12px 0px 0px; }
 
 .showcase-info {
+  margin-top: -10px;
   padding: 15px 30px;
   border-radius: 0px 0px 12px 12px;
   background-color: white; }
