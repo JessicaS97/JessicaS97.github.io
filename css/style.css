@@ -381,6 +381,28 @@ body {
 .section-projects > * {
   transform: skewY(7deg);
 }
+.section-skills {
+  padding-top: 15rem;
+}
+
+.skill-display {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+a {
+  color: #ffffff;
+  font-size: 18px;
+  transition: all 1s ease;
+}
+
+.image-sequence img {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  height: 120px;
+}
 
 #fade {
   display: none;
