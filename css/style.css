@@ -409,4 +409,7 @@ a {
   .showcase-bubble-container {
     padding: 0;
     margin-top: 15px;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  .showcase-bubbles {
+    width: 100%;
+    padding-top: 15px; } }
