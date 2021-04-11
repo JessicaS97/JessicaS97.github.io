@@ -322,7 +322,7 @@ a {
   border-radius: 12px;
   padding-bottom: 35px; }
 
-.showcase-bubble:hover {
+.showcase-bubble:hover:nth-child(2) {
   cursor: pointer; }
 
 .showcase-image {
